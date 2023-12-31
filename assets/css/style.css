@@ -265,16 +265,7 @@ article.active {
   padding-bottom: 7px;
 }
 
-.article-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 30px;
-  height: 3px;
-  background: var(--text-gradient-yellow);
-  border-radius: 3px;
-}
+
 
 .has-scrollbar::-webkit-scrollbar {
   width: 5px; /* for vertical scrollbar */
@@ -306,14 +297,6 @@ article.active {
   z-index: 1;
 }
 
-.content-card::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
-}
 
 /*-----------------------------------*\
   #MAIN
@@ -518,10 +501,7 @@ main {
   #ABOUT
 \*-----------------------------------*/
 
-.about ,.portfolio{
-  margin-bottom: 15px;
-  padding-top: 77px;
-}
+
 
 .about-text,
 .resume p {
@@ -574,13 +554,14 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
 }
+.padding-b{
+  padding-bottom: 33px;
+}
 
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
-.resume {
-  padding-top: 77px;
-}
+
 .article-title {
   margin-bottom: 30px;
 }
@@ -1147,10 +1128,6 @@ textarea.form-input::-webkit-resizer {
     padding-bottom: 15px;
   }
 
-  .article-title::after {
-    width: 40px;
-    height: 5px;
-  }
 
   .icon-box {
     width: 48px;
@@ -1843,10 +1820,9 @@ textarea.form-input::-webkit-resizer {
   color: #fff;
   font-size: 24px;
 }
-/* 
-@media (max-width: 768px) {
-  .image-gallery {
-    width: 90%;
-    height: 90%;
-  }
-} */
+@media (min-width: 1020px){
+ .about ,.resume,.portfolio ,.contact{
+  padding-top: 85px;
+ }
+
+}
