@@ -547,6 +547,7 @@ main {
 .service-item-title {
   margin-bottom: 0px;
   font-size: 25px;
+  text-align: center;
 }
 
 .service-item-text {
